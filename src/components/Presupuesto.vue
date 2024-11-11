@@ -6,6 +6,9 @@
     const presupuesto = ref(0)
     const error = ref('')
 
+    // Macros
+    const emit = defineEmits(['definir-presupuesto'])
+
     // Funciones
     const definirPresupuesto = () => {
         if (presupuesto.value <= 0) {
@@ -15,7 +18,11 @@
             setTimeout(() => {
                 error.value = ''
             }, 3000);
+
+            return
         }
+
+        emit('definir-presupuesto', presupuesto.value)
     }
 </script>
 
