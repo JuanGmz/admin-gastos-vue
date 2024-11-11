@@ -1,30 +1,58 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <header>
+      <h1>Planificador de Gastos</h1>
+    </header>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+<style>
+  :root {
+    --blue: #3B82F6;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --gray: #94A3B8;
+    --dark-gray: #64768B;
+    --black: #000000;
+  }
+
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+    background-color: var(--light-gray);
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 { 
+    font-size: 2rem;
+  }
+
+  header {
+    background-color: var(--blue);
+  }
+
+  header h1 {
+    padding: 3rem 0;
+    margin: 0;
+    color: var(--white);
+    text-align: center;
+  }
 </style>
