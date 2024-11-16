@@ -1,6 +1,6 @@
-projectKey=Integradora
+projectKey=admin-gastos
 serverUrl=http://localhost:9000
 serverVersion=10.7.0.96327
-dashboardUrl=http://localhost:9000/dashboard?id=Integradora
-ceTaskId=6b5a6065-630b-4075-806c-2a6792e61b1c
-ceTaskUrl=http://localhost:9000/api/ce/task?id=6b5a6065-630b-4075-806c-2a6792e61b1c
+dashboardUrl=http://localhost:9000/dashboard?id=admin-gastos
+ceTaskId=8cbf3519-d112-499a-9014-154df569ce71
+ceTaskUrl=http://localhost:9000/api/ce/task?id=8cbf3519-d112-499a-9014-154df569ce71

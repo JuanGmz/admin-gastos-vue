@@ -24,10 +24,14 @@
             type: String,
             required: true
         },
+        disponible: {
+            type: Number,
+            required: true
+        }
     })
 
     const agregarGasto = () => {
-        const { nombre, cantidad, categoria } = props
+        const { nombre, cantidad, categoria, disponible } = props
 
         if([nombre, cantidad, categoria].includes('')) {
             error.value = 'Todos los campos son obligatorios'
@@ -44,6 +48,16 @@
             setTimeout(() => {
                 error.value = ''
             }, 3000);
+        }
+
+        // Validar que la cantidad sea menor al disponible
+        if (cantidad > disponible) {
+            error.value = 'Has excedido el Presupuesto'
+
+            setTimeout(() => {
+                error.value = ''
+            }, 3000);
+            return
         }
 
         emit('guardar-gasto')
@@ -89,7 +103,7 @@
                         id="cantidad" 
                         placeholder="Añade la cantidad del gasto, ej. 300"
                         :value="cantidad"
-                        @input="$emit('update:cantidad', $event.target.value)"
+                        @input="$emit('update:cantidad', Number($event.target.value))"
                     >
                 </div>
                 
