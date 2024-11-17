@@ -1,9 +1,10 @@
-Esta es una aplicación WEB para administrar gastos
+# 💰 Expense Management App  
 
-Realizada con:
+A modern web application for managing expenses efficiently.  
 
-# Vue 3 + Vite
+## 🛠️ Built With  
+- **Vue 3**  
+- **Vite**  
 
-You can see in
-
-https://admin-gastos-vue-three.vercel.app/
+## 🌐 Live Demo  
+Explore the app here: [Expense Manager](https://admin-gastos-vue-three.vercel.app/)  
