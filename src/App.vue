@@ -139,6 +139,11 @@
 
     return gastos.value
   })
+
+  const resetApp = () => {
+    gastos.value = []
+    presupuesto.value = 0
+  }
 </script>
 
 <template>
@@ -159,6 +164,7 @@
           :presupuesto="presupuesto"
           :disponible="disponible"
           :gastado="gastado"
+          @reset-app="resetApp"
         />
       </div>
     </header>
